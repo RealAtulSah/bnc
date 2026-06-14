@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departments | Bihar National College Patna</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .dept-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+    .dept-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 16px;
+      border-radius: var(--radius);
+      text-align: center;
+      font-weight: 500;
+      transition: var(--transition);
+      display: block;
+    }
+    .dept-card:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-sm);
+    }
+    @media (max-width: 991px) {
+      .dept-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 576px) {
+      .dept-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">Academic Departments</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Departments</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      
+      <!-- Science -->
+      <div style="margin-bottom: 40px;">
+        <h2 style="font-size: 20px; color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; display: inline-block;">Faculty of Science</h2>
+        <div class="dept-grid">
+          <a href="department.html?dept=physics" class="dept-card">Physics</a>
+          <a href="department.html?dept=chemistry" class="dept-card">Chemistry</a>
+          <a href="department.html?dept=mathematics" class="dept-card">Mathematics</a>
+          <a href="department.html?dept=botany" class="dept-card">Botany</a>
+          <a href="department.html?dept=zoology" class="dept-card">Zoology</a>
+          <a href="department.html?dept=geology" class="dept-card">Geology</a>
+          <a href="department.html?dept=statistics" class="dept-card">Statistics</a>
+          <a href="department.html?dept=electronics" class="dept-card">Electronics</a>
+        </div>
+      </div>
+
+      <!-- Social Science -->
+      <div style="margin-bottom: 40px;">
+        <h2 style="font-size: 20px; color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; display: inline-block;">Faculty of Social Sciences</h2>
+        <div class="dept-grid">
+          <a href="department.html?dept=geography" class="dept-card">Geography</a>
+          <a href="department.html?dept=history" class="dept-card">History</a>
+          <a href="department.html?dept=economics" class="dept-card">Economics</a>
+          <a href="department.html?dept=politicalscience" class="dept-card">Political Science</a>
+          <a href="department.html?dept=psychology" class="dept-card">Psychology</a>
+          <a href="department.html?dept=philosophy" class="dept-card">Philosophy</a>
+          <a href="department.html?dept=sociology" class="dept-card">Sociology</a>
+        </div>
+      </div>
+
+      <!-- Language -->
+      <div style="margin-bottom: 40px;">
+        <h2 style="font-size: 20px; color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; display: inline-block;">Faculty of Humanities & Languages</h2>
+        <div class="dept-grid">
+          <a href="department.html?dept=hindi" class="dept-card">Hindi</a>
+          <a href="department.html?dept=english" class="dept-card">English</a>
+          <a href="department.html?dept=sanskrit" class="dept-card">Sanskrit</a>
+          <a href="department.html?dept=urdu" class="dept-card">Urdu</a>
+          <a href="department.html?dept=maithili" class="dept-card">Maithili</a>
+        </div>
+      </div>
+
+      <!-- Vocational -->
+      <div style="margin-bottom: 20px;">
+        <h2 style="font-size: 20px; color: var(--primary); margin-bottom: 20px; border-bottom: 2px solid var(--accent); padding-bottom: 8px; display: inline-block;">Vocational & Professional Courses</h2>
+        <div class="dept-grid">
+          <a href="department.html?dept=biotechnology" class="dept-card">Biotechnology</a>
+          <a href="department.html?dept=functionalenglish" class="dept-card">Functional English</a>
+          <a href="department.html?dept=gemmology" class="dept-card">Gemmology</a>
+          <a href="department.html?dept=bba" class="dept-card">BBA</a>
+          <a href="department.html?dept=bca" class="dept-card">BCA</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

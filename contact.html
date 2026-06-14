@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Bihar National College Patna</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">Contact Us</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <span>Contact Us</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container layout-sidebar">
+      
+      <!-- Contact Form -->
+      <div class="card">
+        <h2 style="font-size: 22px; margin-bottom: 20px; border-bottom: 2px solid var(--border); padding-bottom: 10px;">Send Us a Message</h2>
+        <form id="contactForm" onsubmit="event.preventDefault(); alert('Message sent successfully!'); this.reset();">
+          <div class="form-group">
+            <label class="form-label" for="name">Full Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" placeholder="Enter query subject" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Write your message here..." required style="resize: vertical;"></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Submit Query</button>
+        </form>
+      </div>
+
+      <!-- Contact Info Sidebar -->
+      <aside class="grid" style="gap: 24px;">
+        <div class="card">
+          <h3 style="font-size: 18px; margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 8px;">College Address</h3>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 12px;">
+            <strong>Bihar National College</strong><br>
+            Ashok Rajpath, Near Gandhi Maidan,<br>
+            Patna, Bihar - 800004 [India]
+          </p>
+          <p style="color: var(--text-muted); font-size: 14px; margin-bottom: 8px;">
+            <strong>Phone:</strong> 0612-22677619
+          </p>
+          <p style="color: var(--text-muted); font-size: 14px;">
+            <strong>Email:</strong> info@bncollegepatna.com
+          </p>
+        </div>
+
+        <div class="card" style="padding: 12px; background-color: var(--primary-light); color: white;">
+          <h3 style="font-size: 16px; margin-bottom: 8px; color: var(--accent);">Office Hours</h3>
+          <p style="font-size: 13px; margin-bottom: 4px;">• Monday - Saturday: 10:00 AM - 4:00 PM</p>
+          <p style="font-size: 13px;">• Sunday: Closed</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

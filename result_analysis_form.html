@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result Analysis | Bihar National College Patna</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bar-chart {
+      margin-top: 30px;
+      display: grid;
+      gap: 16px;
+    }
+    .bar-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .bar-label {
+      min-width: 120px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .bar-outer {
+      flex-grow: 1;
+      background-color: var(--border);
+      height: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .bar-inner {
+      background-color: var(--accent);
+      height: 100%;
+    }
+    .bar-val {
+      min-width: 40px;
+      font-size: 13px;
+      font-weight: 600;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1 class="page-banner-title">Result Analysis</h1>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &gt; <a href="exam_control.html">Exams</a> &gt; <span>Result Analysis</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="max-width: 800px;">
+      <div class="card">
+        <h2 style="font-size: 22px; margin-bottom: 12px; color: var(--primary);">Academic Performance Analysis (2025)</h2>
+        <p style="color: var(--text-muted); font-size: 14px;">Passing percentages across major regular and vocational departments of B.N. College at the undergraduate level.</p>
+
+        <div class="bar-chart">
+          <div class="bar-item">
+            <span class="bar-label">BSc Physics Hons</span>
+            <div class="bar-outer"><div class="bar-inner" style="width: 94%;"></div></div>
+            <span class="bar-val">94%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">BCA Vocational</span>
+            <div class="bar-outer"><div class="bar-inner" style="width: 96%;"></div></div>
+            <span class="bar-val">96%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">BSc Biotech</span>
+            <div class="bar-outer"><div class="bar-inner" style="width: 98%;"></div></div>
+            <span class="bar-val">98%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">BA English Hons</span>
+            <div class="bar-outer"><div class="bar-inner" style="width: 91%;"></div></div>
+            <span class="bar-val">91%</span>
+          </div>
+          <div class="bar-item">
+            <span class="bar-label">BBA Vocational</span>
+            <div class="bar-outer"><div class="bar-inner" style="width: 95%;"></div></div>
+            <span class="bar-val">95%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="js/components.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
