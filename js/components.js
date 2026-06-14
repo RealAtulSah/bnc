@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   injectHeader();
   injectFooter();
   setupMobileMenu();
+  makeTablesResponsive();
 });
 
 function injectHeader() {
@@ -356,4 +357,15 @@ function setupMobileMenu() {
       }
     });
   }
+}
+
+function makeTablesResponsive() {
+  const tables = document.querySelectorAll('table');
+  tables.forEach(table => {
+    if (table.parentElement.classList.contains('table-responsive')) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'table-responsive';
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
 }

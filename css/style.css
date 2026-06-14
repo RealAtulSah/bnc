@@ -963,3 +963,127 @@ button, input, textarea, select {
 .breadcrumbs a {
   color: var(--accent);
 }
+
+/* --- Additional Mobile Responsiveness Improvements --- */
+
+@media (max-width: 991px) {
+  .nav-container {
+    justify-content: flex-end;
+    min-height: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Topbar Mobile Adaptation */
+  .topbar-links {
+    display: none !important; /* Hide secondary topbar links on mobile */
+  }
+  .topbar-wrapper {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Page Banner Mobile Adaptation */
+  .page-banner {
+    padding: 30px 0;
+  }
+  .page-banner-title {
+    font-size: 26px;
+  }
+
+  /* Cards Padding on Small Screens */
+  .card {
+    padding: 20px;
+  }
+  .notice-card {
+    padding: 16px;
+  }
+
+  /* Hero Slider Mobile Adaptation */
+  .hero-slider {
+    height: 380px !important;
+  }
+  .hero-title {
+    font-size: 28px !important;
+  }
+  .hero-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .hero-content {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Logo Text Compression for Small Mobile Screens */
+  .logo-text h1 {
+    font-size: 16px !important;
+  }
+  .logo-text p {
+    font-size: 9px !important;
+    letter-spacing: 0.05em !important;
+  }
+  .logo-container svg {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Hero Slider Extra Small Mobile Adaptation */
+  .hero-slider {
+    height: 320px !important;
+  }
+  .hero-title {
+    font-size: 22px !important;
+  }
+  .hero-badge {
+    font-size: 9px;
+    padding: 4px 8px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Global Table Responsiveness Wrapper */
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.table-responsive table {
+  margin-top: 0 !important;
+  min-width: 600px; /* Force internal table width to allow scrolling inside container */
+}
+
+/* Founders Section Responsiveness */
+.founders-container {
+  margin-top: 20px;
+}
+.founder-card-item {
+  text-align: center;
+}
+.founder-card-item.first {
+  border-right: 1px solid var(--border);
+  padding-right: 20px;
+}
+.founder-card-item.second {
+  padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .founder-card-item.first {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding-right: 0;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .founder-card-item.second {
+    padding-left: 0;
+  }
+}
